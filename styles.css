@@ -1,0 +1,107 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    background-color: #1F2937;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+    background-color: #1F2937;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.navbar li{
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    color: #1F2937;
+    display: inline;
+    padding: 5px 30px;
+    background-color: white;
+    margin-left: 20px;
+}
+
+.navbar li:hover{
+    cursor: pointer;
+    color: grey;
+}
+
+.navbar .logo{
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 100px;
+    gap: 50px;
+}
+
+.hero .hero-text{
+    max-width: 50%;
+}
+
+.hero .hero-text p{
+    margin-bottom: 15px;
+}
+
+.hero .hero-img img{
+    max-width: 400px;
+    height: auto;
+
+}
+
+.hero .signup-button{
+    background-color: #3882F6;
+    padding: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
+}
+
+.hero .signup-button a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+.quote{
+    background-color: #E5E7EB;
+}
+
+
+.calltoaction{
+    background-color: white;
+    padding: 60px;;
+}
+
+.calltoaction-container{
+    background-color: #3882F6;
+}
+
+footer{
+    background-color: #1F2937;
+}
