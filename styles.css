@@ -1,6 +1,7 @@
 *{
     margin: 0 auto;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -9,13 +10,12 @@ body{
 
 .navbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    gap: 100px;
     background-color: #1F2937;
-    padding: 20px;
-    margin-bottom: 50px;
+    padding: 40px 0;
+    max-width: 100%;
 }
 
 .navbar li{
@@ -24,9 +24,10 @@ body{
     font-weight: bold;
     color: #1F2937;
     display: inline;
-    padding: 5px 30px;
+    padding: 5px 40px;
     background-color: white;
     margin-left: 20px;
+    border-radius: 5px
 }
 
 .navbar li:hover{
@@ -35,15 +36,31 @@ body{
 }
 
 .navbar .logo{
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     color: white;
-    font-weight: 800;
+    font-weight: 1000;
     font-size: 24px;
+    border-bottom: 2px solid white;
+
+    transition: ease-in-out 1s;
+    transform: rotate(0.00turn);
 
 }
 
+.navbar .logo:hover{
+    cursor: pointer;
+    transition: ease-in-out 1s;
+    transform: rotate(0.01turn);
+}
+
 .hero{
+    max-width: 50%;
     display: flex;
     justify-content: center;
+
     align-items: center;
     color: white;
     padding: 100px;
@@ -54,13 +71,20 @@ body{
     max-width: 50%;
 }
 
+.hero .hero-text h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+
 .hero .hero-text p{
     margin-bottom: 15px;
 }
 
 .hero .hero-img img{
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
 
 }
 
@@ -77,31 +101,124 @@ body{
 }
 
 
-
-
-.aboutus{
+.aboutus-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.aboutus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 40px 0;
 
 }
 
+.aboutus h1{
+    padding-bottom: 40px;
+}
+
+.aboutus-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 10%;
+    margin: 0 20px;
+}
+
+.aboutus-items p{
+    min-width: 100px;
+    height: auto;
+    text-align: center;
+}
+
+.aboutus-items img{
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
 .quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #E5E7EB;
+    padding: 65px 0;
+
+}
+
+.quote h2{
+    max-width: 50%;
+    font-weight: normal;
+}
+
+.quotesign p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 1000;
+    margin-top: 20px;
+    width: 50vw;
 }
 
 
 .calltoaction{
     background-color: white;
-    padding: 60px;;
+    padding: 80px;;
 }
 
 .calltoaction-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: #3882F6;
+    border-radius: 5px;
+    padding: 30px;
+    max-width: 80%;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
+}
+
+.calltoaction-text{
+    color: white;
+}
+
+
+.calltoaction-button{
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 3px 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
+}
+
+.calltoaction-button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #3882F6;
+    transition: ease-in-out 0.3s;
+}
+
+.calltoaction-button label:hover{
+    cursor: pointer;
 }
 
 footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     background-color: #1F2937;
+    padding: 30px;
 }
